@@ -71,6 +71,17 @@ header nav ul li a {
     font-size: 20px;
 }
 
+.bio {
+    display: flex;
+    justify-items: space-between;
+    flex-wrap: wrap;
+}
+.bio img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
 footer {
     width: 100%;
     padding: 40px 0;
