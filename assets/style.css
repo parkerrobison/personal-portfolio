@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    padding: 20px 0;
+    padding: 10px 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -24,8 +24,10 @@ header {
 
 header h1 {
     background-color: lightblue; /*should be the same color as the header nav ul li*/
-    font-weight: bold;
-    font-size: 40;
+    font-weight: bolder;
+    font-size: 42px;
+    padding: 2px 20px 2px 40px;
+    
 }
 
 header a{
@@ -35,23 +37,29 @@ header a{
 
 header nav {
     margin: 7px 0;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     list-style: none;
 }
 
 header nav ul li a {
     color: lightblue;
-    border-bottom: 2px solid lightblue;
+    border-bottom: 4px solid lightblue;
     font-size: 18px;
-    padding: 10px 15px;
+    padding: 5px;
     margin: 5px;
-    border-width: 100%
+    border-width: 100%;
+    font-weight: bold;
 }
 
 .hero {
@@ -71,23 +79,65 @@ header nav ul li a {
     font-size: 20px;
 }
 
-.bio {
-    display: flex;
-    justify-items: space-between;
-    flex-wrap: wrap;
+.section-title {
+    font-size: 36px;
+    padding: 0 10px 40px 30px;
+    border-right: 2px solid rgb(71, 87, 114);
+    margin: 10px auto;
+    text-align: end;
+    flex-basis: 20%;
 }
+
 .bio img {
     height: 150px;
     width: 150px;
     border-radius: 50%;
 }
 
-footer {
-    width: 100%;
-    padding: 40px 0;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.bio p {
+    line-height: 1.7;
+    flex-basis: 80%;
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+.project-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*grid-template-rows: repeat(3, 1fr); */
+    grid-auto-rows: minmax(200px ,auto);
+    grid-gap: 5px;
+}
+
+.project-grid-item {
+    border: 5px solid lightblue;
+    font-size: 35px;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.item-1{
+    background-image: url("./images/run-buddy-preview.JPG");
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background-position: top;
+    
+}
+
+.item-2 {
+    background-image: url("./images/horiseon-preview.JPG");
+}
+
+.item-3 {
+    background-image: url("./images/blueberry-bush.jpg");
+}
+
+.item-4 {
+    background-image: url("./images/nothern-lights.jpg")
+}
+
+.item-5 {
+    background-image: url("./images/white-pass.jpg");
 }
 
 footer h2 {
@@ -104,18 +154,39 @@ footer {
     margin: 7px 0;
 }
 
-footer ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+.sm-list {
     list-style: none;
+    display: inline-flex;  
+    text-align: center;
+    flex-direction: row;  
 }
 
 footer ul li a {
-    border-bottom: 2px solid rgb(71, 87, 114);
+    color: rgb(71, 87, 114);
+    border-bottom: 4px solid rgb(71, 87, 114);
     font-size: 18px;
-    padding: 10px 15px;
-    margin: 5px;
-    border-width: 100%
+    font-weight: bold;
+    padding: 10px 30px;
+    margin: 5px 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+.container {
+    display:flex;
+    flex-direction: row;
+    margin: 15px 0;
+}
+
+.section-content {
+    flex: 80%;
+    padding: 0 35px;
+}
+
+.outer-grid {
+    width: 90%;
+    margin: 0 auto;
 }
