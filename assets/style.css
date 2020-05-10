@@ -79,17 +79,22 @@ header nav ul li a {
     font-size: 20px;
 }
 
+.outer-grid {
+    width: 90%;
+    margin: 0 auto;
+}
+
 .section-title {
     font-size: 36px;
     padding: 0 10px 40px 30px;
     border-right: 4px solid rgb(71, 87, 114);
     margin: 10px auto;
     text-align: end;
-    flex-basis: 15%;
+    flex: 1;
 }
 
 .section-content {
-    flex: 85%;
+    flex: 4;
     padding: 0 35px;
 }
 
@@ -224,9 +229,4 @@ footer ul li a {
     display:flex;
     flex-direction: row;
     margin: 15px 0;
-}
-
-.outer-grid {
-    width: 90%;
-    margin: 0 auto;
 }
