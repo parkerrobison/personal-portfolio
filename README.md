@@ -13,6 +13,6 @@ CSS
 https://parkerrobison.github.io/personal-portfolio/
 
 ## Preview of the site
-![](images/personal-profile-img.JPG)
+![Preview of the personal-profile website](images/personal-profile-img.JPG)
 ## Contribution
 Made by Parker Robison
