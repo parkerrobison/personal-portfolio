@@ -1,4 +1,7 @@
 :root {
+    --primary-color: rgb(71, 87, 114);
+    --secondary-color: rgb(155, 212, 254);
+    --tertiary-color: rgb(0, 20, 40);
 
 }
 
@@ -11,7 +14,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(237, 238, 247);
-    color: rgb(71, 87, 114);
+    color: var(--primary-color);
 }
 
 header {
@@ -23,7 +26,7 @@ header {
 }
 
 header h1 {
-    background-color: lightblue; /*should be the same color as the header nav ul li*/
+    background-color: var(--secondary-color); /*should be the same color as the header nav ul li*/
     font-weight: bolder;
     font-size: 42px;
     padding: 2px 20px 2px 40px;
@@ -32,7 +35,7 @@ header h1 {
 
 header a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: var(--tertiary-color);
 }
 
 header nav {
@@ -52,8 +55,8 @@ header nav ul {
 }
 
 header nav ul li a {
-    color: lightblue;
-    border-bottom: 4px solid lightblue;
+    color: var(--secondary-color);
+    border-bottom: 4px solid var(--secondary-color);
     font-size: 18px;
     margin: 5px;
     padding: 10px 15px;
@@ -69,12 +72,13 @@ header nav ul li a {
 }
 
 .hero .subtitle {
-    background-color: lightblue;
+    background-color: var(--secondary-color);
     position: absolute;
     bottom: 20px;
     right: 80px;
     padding: 5px;
     font-size: 20px;
+    color: var(--tertiary-color);
 }
 
 .outer-grid {
@@ -85,7 +89,7 @@ header nav ul li a {
 .section-title {
     font-size: 36px;
     padding: 0 10px 40px 30px;
-    border-right: 4px solid rgb(71, 87, 114);
+    border-right: 4px solid var(--primary-color);
     margin: 10px auto;
     text-align: end;
     flex: 1;
@@ -112,13 +116,12 @@ header nav ul li a {
 .project-grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /*grid-template-rows: repeat(3, 1fr); */
     grid-auto-rows: minmax(200px ,auto);
     grid-gap: 10px;
 }
 
 .project-grid-item {
-    border: 5px solid lightblue;
+    border: 5px solid var(--secondary-color);
     font-size: 35px;
     background-position: center;
     background-size: 100% 100%;
@@ -127,7 +130,7 @@ header nav ul li a {
 
 .project-grid-item .grid-text {
     position: absolute;
-    background: lightblue;
+    background: var(--secondary-color);
     bottom: 20px;
     padding: 10px
 }
@@ -160,7 +163,7 @@ header nav ul li a {
     content: "";
     height: 100%;
     width: 100%;
-    background: lightblue;
+    background: var(--secondary-color);
     position: absolute;
     top: 0;
     left: 0;
@@ -202,8 +205,8 @@ footer h2 {
 
 footer ul li a {
     text-decoration: none;
-    color: rgb(71, 87, 114);
-    border-bottom: 4px solid rgb(71, 87, 114);
+    color: var(--primary-color);
+    border-bottom: 4px solid var(--primary-color);
     font-size: 18px;
     font-weight: bold;
     margin: 10px;
@@ -236,7 +239,7 @@ footer ul li a {
         font-size: 30px;
         text-align: center;
         border: none;
-        border-bottom: 4px solid rgb(71, 87, 114);
+        border-bottom: 4px solid var(--primary-color);
         width: 70%;
     }
 
@@ -294,7 +297,7 @@ footer ul li a {
         font-size: 30px;
         text-align: center;
         border: none;
-        border-bottom: 4px solid rgb(71, 87, 114);
+        border-bottom: 4px solid var(--primary-color);
         width: 70%;
     }
 
@@ -306,10 +309,6 @@ footer ul li a {
     .project-grid-container {
         width: 650px;
         margin: 10px auto;
-        /*grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr); 
-        grid-auto-rows: minmax(200px ,auto);
-        grid-gap: 10px;*/
     }
 
     .project-grid-item .grid-text {
@@ -363,7 +362,7 @@ footer ul li a {
         font-size: 30px;
         text-align: center;
         border: none;
-        border-bottom: 4px solid rgb(71, 87, 114);
+        border-bottom: 4px solid var(--primary-color);
         width: 70%;
     }
 
@@ -375,10 +374,6 @@ footer ul li a {
     .project-grid-container {
         width: 500px;
         margin: 10px auto;
-        /*grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr); 
-        grid-auto-rows: minmax(200px ,auto);
-        grid-gap: 10px;*/
     }
 
     .project-grid-item .grid-text {
