@@ -22,7 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: rgb(44, 62, 80); /*workshop this*/
+    background-color: rgb(44, 62, 80);
 }
 
 header h1 {
@@ -223,7 +223,7 @@ footer ul li a {
     flex-direction: row;
     margin: 15px 0;
 }
-
+/*Media Queries*/
 @media only screen and (max-width: 1060px) {
     
     .container {
