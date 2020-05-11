@@ -12,5 +12,7 @@ CSS
 ## Website
 https://parkerrobison.github.io/personal-portfolio/
 
+## Preview of the site
+![]images/personal-profile-img.JPG
 ## Contribution
 Made by Parker Robison
